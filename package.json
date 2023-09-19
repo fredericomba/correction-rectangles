@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "aliases": {
+    "@modules": "modules"
+  },
+  "scripts": {
+    "test": "node --loader esm-module-alias/loader --experimental-vm-modules ./node_modules/.bin/mocha tests/index.spec.mjs"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "esm-module-alias": "^2.0.3"
+  }
+}
